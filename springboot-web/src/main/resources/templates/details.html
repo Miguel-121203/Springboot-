@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title th:text="${title}"></title>
+    <title th:text="${title}">Document</title>
 </head>
-    <body>
+<body>
 
-        <h1 th:text="${title}"></h1>
-        <ul>
-            <li th:text="${name}"></li>
-            <li th:text="${lastname}"></li>
-        </ul>
+<h1 th:text="${title}"></h1>
+<ul>
+    <li th:text="${user.name}"></li>
+    <li th:text="${user.lastname}"></li>
+</ul>
 
-    </body>
+</body>
 </html>
